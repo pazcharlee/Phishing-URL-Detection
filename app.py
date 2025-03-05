@@ -32,9 +32,6 @@ def index():
         # if(y_pred ==1 ):
         pred = "It is {0:.2f} % safe to go ".format(y_pro_phishing*100)
 
-        #get SHAP explanation image path
-        #shap_image = generate_shap_waterfall(gbc, x)
-
         
         return render_template('index.html',xx =round(y_pro_non_phishing,2),url=url)#, shap_image=shap_image)
     return render_template("index.html", xx =-1)
