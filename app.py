@@ -8,9 +8,6 @@ import warnings
 import pickle
 warnings.filterwarnings('ignore')
 from feature import FeatureExtraction
-#from shap_explainer import generate_shap_waterfall
-
-#from shap_explainer import generate_shap_explanation  # Import function
 
 file = open("pickle/model2.pkl","rb")
 gbc = pickle.load(file)
